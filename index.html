@@ -1,0 +1,41 @@
+HTML
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title> Loja </title>
+<style>
+@media (max-width: 600px) {
+header {background-color:#111;color:white;padding:15px}
+main {display:flex;justify-content:center;gap:20px;flex-wrap:wrap;padding:20px;flex-direction:column;align-items:center}
+body {background-color:#f4f4f4;text-align:center;font-family: Arial, sans-serif;}
+.produto {;display:inline-block;width:90%;gap:20px;padding:15px;background-color:white;border-radius:10px;box-shadow: 0 0 10px rgba(0,0,0,0.1);flex-direction:column;align-items:center;transition:transform 0.03s,box-shadow 0.03s}
+img {width: 100%;border-radius:10px;}
+.produto:hover {transform: scale(1.05);box-shadow: 0 0 20px rgba(0,0,0,0.2)}
+a {display:block;width:100%;padding:10px;margin-top:10px;color:white;background-color:#111;text-decoration:none}
+a:hover {background-color:#444;box-shadow:0 0 10px rgba(0,0,0,0.1)}
+.botao-comprar {display:block;width:100%;padding:10px;margin-top:10px;color:white;background:#111;text-decoration:none;border-radius:5px;transition:background-color 0.03s, box-shadow 0.03s}
+.botao-comprar:hover {background-color:#444;box-shadow: 0 0 10px rgba(0,0,0,0.2)}
+}
+</style>
+</head>
+<body>
+<header>	
+<h1> Produtos </h1>
+</header>
+  <main>
+<div class="produto">
+<h2> Camisas </h2>
+ <img src="#" alt="camisas">
+ <p> Camisas confortaveis em promoção</p>
+   <a href="link" class="botao-comprar"> Compre </a> 
+</div>
+<div class="produto">
+  <h2> boné </h2>
+ <img src="#" alt="boné">
+ <p> Bonés em promoções </p>
+  <a href="link" class="botao-comprar"> Compre </a>
+</div>
+</main>
+</body>
+</html>	
