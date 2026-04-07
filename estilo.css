@@ -1,0 +1,237 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'FontL';
+    src: url('../_fonts/bubblegum-sans-regular.otf');
+}
+p {
+    justify-content: center;
+    text-indent: 50px;
+    text-align: justify;
+}
+body {
+    color:black;
+    background-color:#dddddd;
+    font-family: Arial,sans-serif;
+    margin: 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);}
+
+/* noinspection ALL */
+header#intervalo {
+    border-bottom: 2px solid #dddddd;
+    height: 140px;
+    background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0 80px;
+}
+header#intervalo h1 {
+    font-family: FontL, sans-serif ;
+    font-size: 30px;
+    color: #606060;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.6) ;
+    padding:0;
+    margin-bottom: 0;
+}
+header#intervalo h2 {
+    font-family: FontA, serif;
+    font-size: 1rem;
+    color: #888888;
+    text-shadow:1px 1px 1px rgba(0, 0, 0, 0.6) ;
+    padding:0;
+    margin-top:0
+}
+/* Formatação de imagem */
+figure.foto {position: relative;
+    border:2px solid grey;
+    box-shadow: 1px 1px 2px black;
+}
+figure.foto img {
+    width:100%;
+    height:100%;
+}
+figure.foto figcaption {
+    opacity: 0;
+    position:absolute;
+    top:0;
+    background-color: rgba(0,0,0,0.4);
+    color:white;
+    width:100%;
+    height:100%;
+    padding:10px;
+    box-sizing:border-box;
+    transition: opacity 1s ease;
+    text-align:left;
+}
+figure.foto:hover figcaption {
+    opacity: 1;
+}
+/* Lista */
+ul {
+    font-size: 1.3rem;
+}
+/*  menu */
+nav#menu {
+    display:block;
+}
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position:absolute;
+    top:-20px ;
+    left:50%
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: -6px;
+    transition: background-color 1s ease;
+    font-weight: bold;
+    box-shadow: 3px 5px 3px #606060;
+}
+nav#menu li:hover{
+    background-color: #606060;
+}
+nav#menu h1 {
+    display: none;
+}
+nav#menu a {
+    color: black;
+    text-decoration: none;
+    transition: color 1s ease;
+}
+nav#menu a:hover {
+    color:white;
+}
+
+/* Interface */
+div#interface {
+    width:99%;
+    background-color:white;
+    margin:10px auto;
+    box-shadow: 0 0 10px black;
+    padding:10px;
+}
+header#intervalo img#icone {
+    position: absolute;
+    left:85%;
+    top:70px;
+}
+/* */
+/* noinspection CssInvalidHtmlTagReference */
+p#google a {text-decoration: none;
+    color:black;
+    font-weight: bold;}
+/* Corpo principal */
+
+section#corpo {
+    display:block;
+    width:50%;
+    float:left;
+    border-right: 2px solid #dddddd;
+    padding-right:15px;
+}
+aside#lateral {
+    display:block;
+    width:46%;
+    float:right;
+    padding: 10px;
+    background-color: #dddddd;
+    margin-top:10px;
+    box-shadow: 2px 2px 2px black;
+}
+aside#lateral h1 {
+    font-family: Arial, serif;
+    font-size: 2rem;
+    color:#606060;
+    margin-top: 0;
+}
+aside#lateral h2 {
+    background-color: #606060;
+    color:white;
+    padding:10px;
+}
+footer#fim {
+    clear:both;
+    border-top:2px solid #dddddd;
+    padding-top:10px;
+
+}
+footer#fim p {
+    text-align: center;
+}
+footer#fim p a {
+    text-decoration: none;
+    color:black;
+    font-weight: bold;
+    border-spacing: 0;
+    margin:auto
+}
+/* tabela */
+table#tabela {
+    border:2px solid #606060;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+}
+table#tabela td {
+    border:2px solid #dddddd;
+    padding:10px;
+
+}
+table#tabela td.alinhamento {
+    text-align:left;
+    background-color:black;
+    color:white;
+    vertical-align:middle;
+
+}
+table#tabela caption {
+    color:#606060;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    margin-bottom: 0;
+    text-align:center;
+
+}
+table#tabela caption span {
+    font-size: 0.6rem;
+    display: block;
+    float:right;
+    color:#606060;
+    margin-top:5px;
+
+}
+/* formatação dos titulo */
+article#noticia h2 {
+    font-size:1.2rem;
+    color:#606060;
+    background-color: #dddddd;
+    padding:5px 15px 5px 10px;
+    margin:10px 0 10px 0;
+}
+header#artigo h1 {
+    font-family: FontL, sans-serif ;
+    color:#606060;
+    font-size:2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:2px;
+    background-color:white;
+}
+header#artigo h2 {
+    font-size:1.3rem;
+    color:#cecece;
+    margin:0;
+    padding:2px;
+    background-color:white;
+
+}
+.direita {
+    text-align:right;
+}
+header#artigo h3 {
+    font-size:0.7rem;
+    color:#606060;
+    padding:2px;
+    background-color:white;
+    margin-right:15px
+}
